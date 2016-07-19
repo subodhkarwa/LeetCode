@@ -1,3 +1,8 @@
+/*
+ *  Given a linked list, return the node where the cycle begins. If there is no cycle, return null.
+	Note: Do not modify the linked list.
+ */
+
 package LinkedList;
 
 public class LinkedListCycle {
@@ -13,7 +18,6 @@ public class LinkedListCycle {
 			return null;
 
 		boolean isCycle=false;
-
 		ListNode slow=head,fast=head;
 
 		while(fast!=null && fast.next!=null)
